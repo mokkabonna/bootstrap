@@ -136,6 +136,15 @@ module.exports = function(grunt) {
       }
     },
 
+    "bower-verify": {
+      options: {
+        ignorePatch: false
+      },
+      qunit: {
+        tasks : ['qunit']
+      }
+    },
+
     watch: {
       src: {
         files: '<%= jshint.src.src %>',
@@ -163,6 +172,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-html-validation');
+  grunt.loadNpmTasks('grunt-bower-verify');
   grunt.loadNpmTasks('grunt-jekyll');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('browserstack-runner');
@@ -171,7 +181,7 @@ module.exports = function(grunt) {
   grunt.registerTask('validate-html', ['jekyll', 'validation']);
 
   // Test task.
-  var testSubtasks = ['dist-css', 'jshint', 'qunit', 'validate-html'];
+  var testSubtasks = ['dist-css', 'jshint', 'bower-verify:qunit', 'validate-html'];
   // Only run BrowserStack tests under Travis
   if (process.env.TRAVIS) {
     // Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
