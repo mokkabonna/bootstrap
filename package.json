@@ -5,7 +5,7 @@
   , "keywords": ["bootstrap", "css"]
   , "homepage": "http://twbs.github.com/bootstrap/"
   , "author": "Twitter Inc."
-  , "scripts": { "test": "grunt test" }
+  , "scripts": { "test": "grunt bower-verify" }
   , "repository": {
       "type": "git"
     , "url": "https://github.com/twbs/bootstrap.git"
@@ -33,5 +33,6 @@
     , "grunt-jekyll": "~0.3.8"
     , "grunt-recess": "~0.3.3"
     , "browserstack-runner": "~0.0.11"
+    , "grunt-bower-verify": "~0.2.0"
   }
 }
