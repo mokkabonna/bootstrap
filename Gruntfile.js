@@ -141,7 +141,7 @@ module.exports = function(grunt) {
         ignorePatch: false
       },
       qunit: {
-        tasks : ['browserstack_runner','qunit']
+        tasks : ['qunit']
       }
     },
 
