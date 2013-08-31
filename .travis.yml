@@ -1,11 +1,11 @@
 language: node_js
 node_js:
-  - 0.8
+- 0.8
 before_script:
-  - gem install jekyll
-  - npm install -g grunt-cli
+- gem install jekyll
+- npm install -g grunt-cli
 env:
   global:
-  - secure: Besg41eyU+2mfxrywQ4ydOShMdc34ImaO0S0ENP+aCOBuyNBIgP59wy5tBMmyai2/8eInYeVps4Td96mWInMMxzTe3Bar7eTLG5tWVKRSr/wc4NBPZ/ppoPAmCEsz9Y+VptRH9/FO8n7hsL9EFZ+xBKbG+C0SccGoyBDpA5j7/w=
-  - secure: Ptiv7phCImFP3ALIz+sMQzrZg8k7C1gLZbFBhWxjnQr3g06wIfX3Ls5y9OHvxid+lOZZjISui3wzBVgpVHqwHUYf96+r0mo6/mJ+F4ffUmShZANVaIMD/JRTnXhUQJbvntGLvxn1EYWPdNM+2IHJrMipnjHxU9tkgAnlel4Zdew=
-  - TWBS_HAVE_OWN_BROWSERSTACK_KEY: ""
+  - secure: YWGZCUR1R9P40bt/6kRBUyfhc9Er7lynm5tYVtyS/Egoud7l9oMMNQwTzHyhe8XMLxcVZItDiQFqPtQCKtiEnFQo2jknV6U6qAjkD/g1+UKNK+LIouarnKXK7nzV9WVL2Nu14YCZo0D0PmG6Cs6BLOu3mnMgRNtX7fYBPqRRKW4=
+  - secure: ONCj+JohcKx3eTpwA4DxHix3gVz+wZwqO8i6zQAr6XtOGxcgJ4xSi1PSHOYw9Lfc5Y4ZD08umlRkYgcbpex9xs7nJFWgv78FWi2xf4+ZlrdB6G7RS6eivitLs3BgxYnIb+g1gvc7S+N8OrKjJszeefl/WcZksb7w2Lwz8pI1138=
+  - TWBS_HAVE_OWN_BROWSERSTACK_KEY: 'true'
