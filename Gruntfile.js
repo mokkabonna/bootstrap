@@ -143,7 +143,7 @@ module.exports = function(grunt) {
         completeOnError: true,
       },
       qunit: {
-        tasks : ['browserstack_runner','qunit']
+        tasks : ['qunit']
       }
     },
 
