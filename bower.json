@@ -6,8 +6,6 @@
       "**/.*"
   ],
   "dependencies": {
-    "jquery": "*",
-    "underscore": "*",
-    "jquery-file-upload" : "*"
+    "jquery": "*"
   }
 }
