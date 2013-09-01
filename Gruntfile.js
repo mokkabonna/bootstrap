@@ -138,7 +138,9 @@ module.exports = function(grunt) {
 
     "bower-verify": {
       options: {
-        ignorePatch: false
+        ignorePatch: false,
+        showTasksOutput: false,
+        completeOnError: true,
       },
       qunit: {
         tasks : ['browserstack_runner','qunit']
