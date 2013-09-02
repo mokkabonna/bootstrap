@@ -187,10 +187,11 @@ module.exports = function(grunt) {
   // Only run BrowserStack tests under Travis
   if (process.env.TRAVIS) {
     //replace qunit by bower-verify if in travis
+    testSubtasks.splice(2, 1, 'bower-verify:qunit');
 
     // Only run BrowserStack tests if this is a mainline commit in twbs/bootstrap, or you have your own BrowserStack key
     if ((process.env.TRAVIS_REPO_SLUG === 'twbs/bootstrap' && process.env.TRAVIS_PULL_REQUEST === 'false') || process.env.TWBS_HAVE_OWN_BROWSERSTACK_KEY) {
-      testSubtasks.splice(2, 1, 'bower-verify:qunit');
+      testSubtasks.push('browserstack-runner');
     }
   }
   grunt.registerTask('test', testSubtasks);
