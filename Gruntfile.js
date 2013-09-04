@@ -139,7 +139,7 @@ module.exports = function(grunt) {
     "bower-verify": {
       options: {
         ignorePatch: false,
-        showTasksOutput: false,
+        showTasksOutput: true,
         completeOnError: true,
       },
       qunit: {
