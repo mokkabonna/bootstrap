@@ -261,6 +261,9 @@ module.exports = function (grunt) {
         showTasksOutput: true,
         completeOnError: true,
       },
+      tests: {
+        tasks : ['qunit']
+      }
     },
 
     qunit: {
@@ -365,7 +368,7 @@ module.exports = function (grunt) {
   var testSubtasks = [];
   // Skip core tests if running a different subset of the test suite
   if (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'core') {
-    testSubtasks = testSubtasks.concat(['dist-css', 'csslint', 'jshint', 'jscs', 'qunit', 'bower-verify', 'build-customizer-vars-form']);
+    testSubtasks = testSubtasks.concat(['dist-css', 'csslint', 'jshint', 'jscs', 'bower-verify', 'build-customizer-vars-form']);
   }
   // Skip HTML validation if running a different subset of the test suite
   if (!process.env.TWBS_TEST || process.env.TWBS_TEST === 'validate-html') {
